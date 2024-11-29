@@ -1,0 +1,21 @@
+/* Pie de página */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El main ocupa todo el espacio disponible */
+main {
+    flex: 1; /* Toma todo el espacio vertical disponible */
+}
+
+/* Footer al final */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9em;
+}

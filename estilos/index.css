@@ -1,0 +1,106 @@
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    gap: 50px; /* Aumenta el espacio entre columnas */
+}
+
+/* Columnas generales */
+.columna {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Primera columna: Texto */
+.columna.texto {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: -20px;
+}
+
+.columna.texto h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #855631b9;
+}
+
+.columna.texto p {
+    margin-bottom: 20px;
+}
+
+/* Segunda columna: Imagen grande */
+.columna.imagen-grande img {
+    width: 400px;
+    height: 700px;
+    margin-top: 90px;
+}
+
+/* Tercera columna: Reseñas */
+.columna.reseñas {
+    flex: 1;
+}
+
+.columna.reseñas h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #855631b9;
+}
+
+.reseña h3 {
+    color: #855631b9;
+}
+
+.reseña {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.reseña .texto {
+    flex: 2;
+}
+
+.reseña img {
+    flex: 1;
+    max-width: 150px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ddbc8ae0;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background: #855631b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .columna {
+        text-align: center;
+    }
+
+    .reseña {
+        flex-direction: column;
+    }
+}

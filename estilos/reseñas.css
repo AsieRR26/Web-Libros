@@ -1,0 +1,78 @@
+/* Contenedor principal */
+.reseñas {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Estilo general para cada género */
+.genero {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.genero .imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.genero .imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.genero .contenido {
+    flex: 2;
+}
+
+.genero .contenido h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #855631b9;
+}
+
+.genero .contenido p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.genero .contenido a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ddbc8ae0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.genero .contenido a:hover {
+    background: #855631b9;
+}
+
+/* Alternar posición de imagen y contenido */
+.genero.alterno {
+    flex-direction: row-reverse;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .genero {
+        flex-direction: column;
+    }
+
+    .genero.alterno {
+        flex-direction: column;
+    }
+
+    .genero .imagen, .genero .contenido {
+        text-align: center;
+    }
+}

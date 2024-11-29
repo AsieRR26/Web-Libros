@@ -1,0 +1,72 @@
+/* Contenedor principal */
+.reseña {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Contenido textual */
+.reseña .contenido {
+    flex: 2;
+}
+
+.reseña .contenido h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #855631b9;
+}
+
+.reseña .contenido p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.reseña .contenido .boton {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ddbc8ae0;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.reseña .contenido .boton:hover {
+    background: #855631b9;
+}
+
+/* Imagen */
+.reseña .imagen {
+    flex: 1;
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 30px;
+}
+
+.reseña .imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .reseña {
+        flex-direction: column;
+    }
+
+    .reseña .contenido, .reseña .imagen {
+        text-align: center;
+    }
+
+    .reseña .contenido .boton {
+        margin-top: 20px;
+    }
+}

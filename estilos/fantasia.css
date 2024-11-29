@@ -1,0 +1,85 @@
+/* Contenedor principal */
+.genero {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.genero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #855631b9;
+    text-align: center;
+}
+
+/* Estilo general para cada libro */
+.libro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.libro .contenido {
+    flex: 2;
+}
+
+.libro .contenido h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #855631b9;
+}
+
+.libro .contenido p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.libro .contenido a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ddbc8ae0;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.libro .contenido a:hover {
+    background: #855631b9;
+}
+
+/* Imagen de cada libro */
+.libro .imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.libro .imagen img {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternar posición de contenido e imagen */
+.libro.alterno {
+    flex-direction: row-reverse;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .libro {
+        flex-direction: column;
+    }
+
+    .libro.alterno {
+        flex-direction: column;
+    }
+
+    .libro .imagen, .libro .contenido {
+        text-align: center;
+    }
+}

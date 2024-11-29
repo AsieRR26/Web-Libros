@@ -1,0 +1,114 @@
+/* Contenedor principal */
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    gap: 50px; /* Incrementamos el espacio horizontal entre formulario y mapa */
+}
+
+/* Opcional: ajuste específico del margen del mapa */
+.mapa {
+    margin-left: 50px; /* Añadimos un margen extra a la izquierda del mapa */
+}
+
+/* Formulario */
+.formulario {
+    flex: 1; /* Ocupa la mitad izquierda */
+}
+
+.formulario h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #855631b9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-size: 1em;
+    color: #855631b9;;
+}
+
+form input, form textarea {
+    width: 450px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    width: 100px;
+    padding: 10px;
+    background: #ddbc8ae0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #855631b9;
+}
+
+/* Mapa */
+.mapa {
+    flex: 1; /* Ocupa la mitad derecha */
+    width: 500px;
+}
+
+.mapa h2 {
+    font-size: 1.8em;
+    margin-bottom: 50px;
+    color: #855631b9;;
+}
+
+iframe {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Redes Sociales */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* Incrementamos el espacio entre los logotipos */
+    margin: 20px 0 40px 0;
+}
+
+.redes-sociales i {
+    font-size: 2rem; /* Ajusta el tamaño del icono */
+    color: #ddbc8ae0; /* Cambia el color del icono */
+}
+
+.redes-sociales i:hover {
+    color: #855631b9; /* Cambia el color al pasar el cursor */
+    transform: scale(1.1); /* Agrega un efecto de escala al pasar el cursor */
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario, .mapa {
+        flex: unset;
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
